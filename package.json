@@ -1,0 +1,16 @@
+{
+  "name": "testtask",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "migrate": "node-pg-migrate"
+  },
+  "author": "VasylHoncharenko",
+  "license": "ISC",
+  "dependencies": {
+    "node-pg-migrate": "^5.9.0",
+    "pg": "^8.5.1"
+  }
+}
