@@ -74,6 +74,6 @@ exports.update = (req, res) => {
 
 exports.remove = (req, res) => {
     HotDogs.destroy({where: {id: req.params.id}})
-        .then(data => res.status(204))
+        .then(data => res.json({removed: true}))
 
 };

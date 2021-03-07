@@ -1,5 +1,7 @@
 const Sequalize = require('sequelize');
-const sequalize = new Sequalize('postgres://rmbqbumc:uQW3Vldf4Q0ELdoTfEXi4ULsNUdAqw4N@isilo.db.elephantsql.com:5432/rmbqbumc')
+const config = require('config');
+
+const sequalize = new Sequalize(config.get('db'));
 
 const db = {};
 

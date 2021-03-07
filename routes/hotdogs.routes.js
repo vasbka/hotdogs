@@ -1,13 +1,13 @@
 const {isNameExists} = require("../controllers/hotdogs.controller");
-const cors = require('cors')
+const cors = require('cors');
+const config = require('config');
 const {create, findAll, update, remove} = require("../controllers/hotdogs.controller.js");
 
 module.exports = app => {
-
     let router = require("express").Router();
 
     let corsOptions = {
-        origin: 'http://localhost:3000',
+        origin: config.get('clientHost'),
         optionsSuccessStatus: 200
     }
 
