@@ -2,6 +2,9 @@ import React from 'react';
 import * as axios from "axios";
 import styles from './Hotdogs.module.scss'
 
+/**
+ * Ideally whole work with API i would be move to the separate module.
+ */
 class Hotdogs extends React.Component {
     componentDidMount() {
         axios.get('http://localhost:5000/api/hot-dogs')

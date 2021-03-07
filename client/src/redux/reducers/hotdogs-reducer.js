@@ -77,6 +77,8 @@ const hotDogReducer = (state = initialState, action) => {
     }
 
     if (action.type === DELETE_EDITING_HOT_DOG) {
+        console.log(state.editId);
+        console.log(newState.hotDogs.filter(item => item.id !== state.editId));
         newState.hotDogs = newState.hotDogs.filter(item => item.id !== state.editId);
     }
 
