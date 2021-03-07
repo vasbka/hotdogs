@@ -1,7 +1,7 @@
 const Sequalize = require('sequelize');
-const config = require('config');
 
-const sequalize = new Sequalize(config.get('db'));
+console.log(process.env);
+const sequalize = new Sequalize(process.env.DB_URL);
 
 const db = {};
 
