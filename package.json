@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "migrate": "node-pg-migrate",
-    "start": "DB_URL=postgres://rmbqbumc:uQW3Vldf4Q0ELdoTfEXi4ULsNUdAqw4N@isilo.db.elephantsql.com:5432/rmbqbumc CLIENT_HOST=http://localhost:5000 node index.js"
+    "start": "node index.js"
   },
   "author": "VasylHoncharenko",
   "license": "ISC",
